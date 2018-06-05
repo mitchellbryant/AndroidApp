@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.u9.myapplication.CourseEditActivity">
+
+        <TextView
+            android:id="@+id/courseNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/textView4"
+            android:layout_marginTop="67dp"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/courseStartText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/courseNameText"
+            android:layout_alignStart="@+id/courseNameText"
+            android:layout_below="@+id/courseNameText"
+            android:layout_marginTop="12dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/courseEndText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/courseStartText"
+            android:layout_alignStart="@+id/courseStartText"
+            android:layout_below="@+id/courseStartText"
+            android:layout_marginTop="11dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editCourseName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/appBarLayout"
+            android:layout_marginLeft="19dp"
+            android:layout_marginStart="19dp"
+            android:layout_toEndOf="@+id/courseNameText"
+            android:layout_toRightOf="@+id/courseNameText"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name" />
+
+        <EditText
+            android:id="@+id/editCourseTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editCourseName"
+            android:layout_alignStart="@+id/editCourseName"
+            android:layout_below="@+id/editCourseName"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name" />
+
+        <EditText
+            android:id="@+id/editCourseStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editCourseTitle"
+            android:layout_alignStart="@+id/editCourseTitle"
+            android:layout_below="@+id/editCourseTitle"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name" />
+        <EditText
+            android:id="@+id/editCourseEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editCourseStart"
+            android:layout_alignStart="@+id/editCourseStart"
+            android:layout_below="@+id/editCourseStart"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name" />
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            android:id="@+id/appBarLayout">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_course_edit"
+                android:label="Edit Course"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/courseStartText"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_toEndOf="@+id/editCourseName"
+            android:layout_toRightOf="@+id/editCourseName"
+            android:text="Name" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editCourseTitle"
+            android:layout_alignBottom="@+id/editCourseTitle"
+            android:layout_alignLeft="@+id/textView7"
+            android:layout_alignStart="@+id/textView7"
+            android:text="Title" />
+
+        <CheckBox
+            android:id="@+id/startAlertCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editCourseTitle"
+            android:layout_toEndOf="@+id/editCourseStart"
+            android:layout_toRightOf="@+id/editCourseStart"
+            android:text="Start Date Alert" />
+
+        <CheckBox
+            android:id="@+id/endAlertCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editCourseStart"
+            android:layout_toEndOf="@+id/editCourseStart"
+            android:layout_toRightOf="@+id/editCourseStart"
+            android:text="End Date Alert" />
+
+        <CheckBox
+            android:id="@+id/objectiveCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editCourseEnd"
+            android:layout_alignStart="@+id/editCourseEnd"
+            android:layout_below="@+id/editCourseEnd"
+            android:layout_marginTop="17dp"
+            android:text="Objective Assessment" />
+
+        <CheckBox
+            android:id="@+id/performaceCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/objectiveCheck"
+            android:layout_alignStart="@+id/objectiveCheck"
+            android:layout_below="@+id/objectiveCheck"
+            android:layout_marginTop="60dp"
+            android:text="Performance Assessment" />
+
+        <CheckBox
+            android:id="@+id/assessGoalAlert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editAssessmentGoal"
+            android:layout_alignBottom="@+id/editAssessmentGoal"
+            android:layout_toEndOf="@+id/editAssessmentGoal"
+            android:layout_toRightOf="@+id/editAssessmentGoal"
+            android:text="Goal Alert" />
+
+        <EditText
+            android:id="@+id/editAssessmentGoal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/objectiveCheck"
+            android:layout_alignStart="@+id/objectiveCheck"
+            android:layout_below="@+id/objectiveCheck"
+            android:ems="10"
+            android:hint="Goal Date (1-31-2018)"
+            android:inputType="textPersonName" />
+        <CheckBox
+            android:id="@+id/assessGoalAlertP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_toEndOf="@+id/editAssessmentGoal"
+            android:layout_below="@+id/performaceCheck"
+            android:layout_toRightOf="@+id/editAssessmentGoal"
+            android:text="Goal Alert" />
+
+        <EditText
+            android:id="@+id/editAssessmentGoalP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/objectiveCheck"
+            android:layout_alignStart="@+id/objectiveCheck"
+            android:layout_below="@+id/performaceCheck"
+            android:ems="10"
+            android:hint="Goal Date (1-31-2018)"
+            android:inputType="textPersonName" />
+
+        <RadioGroup
+            android:id="@+id/RGroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_below="@+id/textView5">
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editAssessmentGoalP"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@+id/courseEndText"
+                android:layout_toRightOf="@+id/courseEndText"
+                android:text="In Progress" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/radioButton"
+                android:text="Complete" />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/radioButton2"
+                android:layout_alignBottom="@+id/radioButton2"
+                android:layout_toEndOf="@+id/objectiveCheck"
+                android:layout_toRightOf="@+id/objectiveCheck"
+                android:text="Dropped" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editAssessmentGoalP"
+            android:layout_alignStart="@+id/editAssessmentGoalP"
+            android:layout_below="@+id/editAssessmentGoalP"
+            android:text="Course Status"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.u9.myapplication.TermActivity">
+
+    <item
+        android:id="@+id/notes_item"
+        android:title="Notes"
+        app:showAsAction="always" />
+
+</menu>

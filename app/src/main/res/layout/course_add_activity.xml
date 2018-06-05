@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.u9.myapplication.CourseAddActivity">
+
+    <EditText
+        android:id="@+id/courseNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/appBarLayout2"
+        android:layout_marginLeft="42dp"
+        android:layout_marginStart="42dp"
+        android:ems="10"
+        android:hint="Course ID/Name"
+        android:inputType="textPersonName" />
+    <EditText
+        android:id="@+id/courseTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/courseStartText"
+        android:layout_alignStart="@+id/courseStartText"
+        android:layout_below="@+id/courseNameText"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:hint="Course Title"
+        android:inputType="textPersonName" />
+    <EditText
+        android:id="@+id/courseStartText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/courseNameText"
+        android:layout_alignRight="@+id/courseNameText"
+        android:layout_below="@+id/courseNameText"
+        android:layout_marginTop="65dp"
+        android:ems="10"
+        android:hint="Start Date (12-12-2012)"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/courseEndText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/courseStartText"
+        android:layout_alignStart="@+id/courseStartText"
+        android:layout_below="@+id/courseStartText"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="End Date (6-12-2013)"
+        android:inputType="textPersonName" />
+
+    <CheckBox
+        android:id="@+id/pAssess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/assessGoalAlert"
+        android:layout_alignStart="@+id/assessGoalAlert"
+        android:layout_below="@+id/assessGoalAlert"
+        android:text="Performance Assessment" />
+
+    <CheckBox
+        android:id="@+id/assessGoalAlert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/courseEndText"
+        android:layout_alignStart="@+id/courseEndText"
+        android:layout_below="@+id/courseEndText"
+        android:text="Objective Assessment" />
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:id="@+id/appBarLayout2">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarAddCourse"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+             />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ListView
+        android:id="@+id/courseAddMentors"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/textView12"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="19dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/pAssess"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:text="Select Mentor" />
+
+</RelativeLayout>

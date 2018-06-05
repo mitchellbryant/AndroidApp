@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.u9.myapplication.CourseDetailActivity">
+
+    <Button
+        android:id="@+id/editCourseBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/courseTitleText"
+        android:background="@android:color/holo_red_dark"
+        android:onClick="onClickDelBtn"
+        android:text="Delete Course" />
+
+    <Button
+        android:id="@+id/editCourseBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/appBarLayout"
+        android:background="@android:color/holo_orange_light"
+        android:onClick="onClickEditBtn"
+        android:text="   Edit Course  " />
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/appBarLayout">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_course_detail"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:label="@string/courses_detail_name" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <TextView
+        android:id="@+id/courseNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editCourseBtn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="38dp"
+        android:layout_marginStart="38dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/courseTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/courseNameText"
+        android:layout_alignStart="@+id/courseNameText"
+        android:layout_below="@+id/courseNameText"
+        android:layout_marginTop="11dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/courseStartText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/courseTitleText"
+        android:layout_alignStart="@+id/courseTitleText"
+        android:layout_below="@+id/courseTitleText"
+        android:layout_marginTop="30dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/courseEndText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/courseStartText"
+        android:layout_alignStart="@+id/courseStartText"
+        android:layout_below="@+id/courseStartText"
+        android:layout_marginTop="13dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textViewasdf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/courseStatus"
+        android:layout_alignStart="@+id/courseStatus"
+        android:layout_below="@+id/courseStatus"
+        android:layout_marginTop="49dp"
+        android:text="Mentor Information:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/courseStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/courseEndText"
+        android:layout_alignStart="@+id/courseEndText"
+        android:layout_below="@+id/courseEndText"
+        android:layout_marginTop="33dp"
+        android:text="Status: "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/courseMentorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewasdf"
+        android:layout_alignStart="@+id/textViewasdf"
+        android:layout_below="@+id/textViewasdf"
+        android:layout_marginTop="19dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/courseMentorPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/courseMentorText"
+        android:layout_alignStart="@+id/courseMentorText"
+        android:layout_below="@+id/courseMentorText"
+        android:layout_marginTop="19dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/courseMentorEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/courseMentorText"
+
+        android:layout_below="@+id/courseMentorPhone"
+        android:layout_marginTop="16dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/statusCourse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/courseStatus"
+        android:layout_alignBottom="@+id/courseStatus"
+        android:layout_below="@+id/courseEndText"
+        android:layout_toRightOf="@+id/courseStatus"
+        android:text="TextView" />
+
+</RelativeLayout>

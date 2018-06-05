@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Student Curriculum</string>
+    <string name="action_settings">Settings</string>
+    <string name="terms_name">Terms</string>
+    <string name="terms_detail_name">Term Detail</string>
+    <string name="courses_detail_name">Course Detail</string>
+    <string name="courses_name">Courses</string>
+    <string name="courses_list">Course List</string>
+    <string name="mentors_name">Assessments</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="term_add">Add Term</string>
+
+</resources>
